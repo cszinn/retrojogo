@@ -1,0 +1,44 @@
+**************************************************************
+
+                    Carliv Image Kitchen for Android
+                        copyright(c) 2026 carliv.eu          
+
+**************************************************************	
+
+Authorization is NOT given by the author of this software to
+distribute this outside of it's original form, or include it in commercial works.
+
+Express permission must be granted to redistribute copies of this software in full or part.
+
+---------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+ Usage:
+    0. For first start,  after unpacking the kitchen archive,  double click [carliv] and accept the license. The kitchen will launch after that. This needs to be done only once after unpacking.
+    1. After that,  whenever you want to use the kitchen, just double click on [carliv]. In linux it may need to be started with [./carliv] command in a terminal window opened in kitchen root folder.
+    3. use the kitchen buttons to do what you need to do:
+        3.0 "Image file select" button will open a file open dialog (initially in kitchen input folder, but you can navigate to the location where the file is), and you can choose any suitable file to work with (boot,  recovery and vendor_boot images for android phones,  with extension img or bin). 
+        3.1 "unpack image" will do just that,  in a folder with selected image name,  in kitchen root folder.
+        3.2 "repack image" will repack the selected image from that folder to a new image ready to be flashed on phone. During repacking it will appear some pop-ups in wich you will need to select the archiving level for ramdisk compression,  the type of image for boot_signer and some other questions. 
+        3.3 "repack tar.md5 for Samsung odin" will do exactly the same as "repack image",  except at the end when it will compress the new image as a tar.md5 file for Samsung flash tool odin.
+        3.4 "image info display" will open a text document in your default text viewer with the technical informations of the image file,  without unpacking it.
+        3.5 "clear folder" will delete any folder that was created by unpacking images leaving the kitchen root folder clean as it was at begining.
+        3.6 "instructions" will open this text.
+        3.7 "close" will ask for  "output" folder deletion if there is any. It can be used also the window close button,  with same function.
+
+Please respect my work, and don't take it and share it on other sites, or integrate it in other tools. I would like you to provide a link to my page https://carliv.eu, instead of taking and posting it on other sites.
+
+*****************************************************************************************
+This version of kitchen in theory works with android up to version 16 (inclusive).
+I don't have the possibility to test it for versions higher than android 11.
+I unpacked images with header version 3 and 4 and then repacked with android python script, 
+and vice versa and it worked without problems.
+*****************************************************************************************
+CREDITS :                                                               
+- Android Open Source Project for the initial source and source code for the archiving tools; 
+- All the authors of the archiving tools included in Android source: Julian Seward - bzip2; GNU org - cpio, gzip, printf; Markus Oberhumer -lzop; Yann Collet -lz4; Igor Pavlov -lzma, xz; 
+- Cygwin for the building environment in windows;
+- Openssl Project for the openssl source;
+- Python Org;
+- All the people that tested this and helped me to spot bugs and to improve it.
+*****************************************************************************************
+
